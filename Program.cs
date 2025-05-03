@@ -125,7 +125,7 @@ namespace giti
                 {
                     Console.WriteLine("you topper");
                 }
-                else if (percentage >= 100)
+                else if (percentage > 100)
                 {
                     Console.WriteLine("please enter valid marks!!");
                 }
