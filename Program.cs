@@ -111,7 +111,7 @@ namespace giti
 
                 if (percentage >= 36 || percentage < 60)
                 {
-                    Console.WriteLine("frist .division");
+                    Console.WriteLine("frist division");
                 }
                 else if (percentage >= 60 || percentage < 80)
                 {
