@@ -6,11 +6,8 @@ namespace giti
     {
         static void Main(string[] args)
         {
-
-            Console.Clear();
-
-            while (true)
-            {
+            while (true) {
+                Console.Clear();
 
                 Console.WriteLine("hello please enter your marks of maths");
                 string m = Console.ReadLine();
@@ -22,7 +19,8 @@ namespace giti
                 else if (maths > 100)
                 {
                     Console.WriteLine("please enter valid marks");
-                continue; } 
+                    continue;
+                }
                 else
                 {
                     Console.WriteLine("your passed");
@@ -39,7 +37,8 @@ namespace giti
                 else if (science > 100)
                 {
                     Console.WriteLine("please enter valid marks");
-                continue; }
+                    continue;
+                }
                 else
                 {
                     Console.WriteLine("your passed");
@@ -56,7 +55,8 @@ namespace giti
                 else if (sst > 100)
                 {
                     Console.WriteLine("please enter valid marks");
-                continue; }
+                    continue;
+                }
                 else
                 {
                     Console.WriteLine("your passed");
@@ -72,7 +72,8 @@ namespace giti
                 else if (pe > 100)
                 {
                     Console.WriteLine("please enter valid marks");
-                continue; }
+                    continue;
+                }
                 else
                 {
                     Console.WriteLine("your passed");
@@ -88,7 +89,8 @@ namespace giti
                 else if (eng > 100)
                 {
                     Console.WriteLine("please enter valid marks");
-                continue; }
+                    continue;
+                }
                 else
                 {
                     Console.WriteLine("your passed");
