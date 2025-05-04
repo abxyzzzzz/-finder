@@ -113,11 +113,11 @@ namespace giti
                 //Console.WriteLine($"your overall passing/fail percentage is {percentage:F2}% ");
                 if (percentage < 36)
                 {
-                    Console.WriteLine($"Your failing percentage is {percentage:F2}");
+                    Console.WriteLine($"Your failing percentage is {percentage}");
                 }
                 if (percentage >= 36)
                 {
-                    Console.WriteLine($"Your passing percentage is {percentage:F2}");
+                    Console.WriteLine($"Your passing percentage is {percentage}");
                 }
 
 
