@@ -6,130 +6,136 @@ namespace giti
     {
         static void Main(string[] args)
         {
-            while (true) {
+            while (true)
+            {
                 Console.Clear();
 
-                Console.WriteLine("hello please enter your marks of maths");
+                Console.WriteLine("Welcome to marks calculator of CBSE international school of class 10th");
+
+                Console.WriteLine("-----------------------------------------------------------------------");
+
+                Console.WriteLine("Please enter your marks of maths");
+                Console.Write(":");
                 string m = Console.ReadLine();
                 int maths = Convert.ToInt32(m);
                 if (maths <= 35)
                 {
-                    Console.WriteLine("your failed");
+                    Console.WriteLine("Your failed");
                 }
                 else if (maths > 100)
                 {
-                    Console.WriteLine("please enter valid marks");
+                    Console.WriteLine("Please enter valid marks");
                     continue;
                 }
                 else
                 {
-                    Console.WriteLine("your passed");
+                    Console.WriteLine("Your passed");
                 }
 
 
-                Console.WriteLine(" please enter your marks of science");
+                Console.WriteLine("Please enter your marks of science");
+                Console.Write(":");
                 string s = Console.ReadLine();
                 int science = Convert.ToInt32(s);
                 if (science <= 35)
                 {
-                    Console.WriteLine("your failed");
+                    Console.WriteLine("Your failed");
                 }
                 else if (science > 100)
                 {
-                    Console.WriteLine("please enter valid marks");
+                    Console.WriteLine("Please enter valid marks");
                     continue;
                 }
                 else
                 {
-                    Console.WriteLine("your passed");
+                    Console.WriteLine("Your passed");
                 }
 
 
-                Console.WriteLine(" please enter your marks of social stduies");
+                Console.WriteLine("Please enter your marks of social stduies");
+                Console.Write(":");
                 string st = Console.ReadLine();
                 int sst = Convert.ToInt32(st);
                 if (sst <= 35)
                 {
-                    Console.WriteLine("your failed");
+                    Console.WriteLine("Your failed");
                 }
                 else if (sst > 100)
                 {
-                    Console.WriteLine("please enter valid marks");
+                    Console.WriteLine("Please enter valid marks");
                     continue;
                 }
                 else
                 {
-                    Console.WriteLine("your passed");
+                    Console.WriteLine("Your passed");
                 }
 
-                Console.WriteLine(" please enter your marks of physcial education");
+                Console.WriteLine("Please enter your marks of physcial education");
+                Console.Write(":");
                 string phy = Console.ReadLine();
                 int pe = Convert.ToInt32(phy);
                 if (pe <= 35)
                 {
-                    Console.WriteLine("your failed");
+                    Console.WriteLine("Your failed");
                 }
                 else if (pe > 100)
                 {
-                    Console.WriteLine("please enter valid marks");
+                    Console.WriteLine("Please enter valid marks");
                     continue;
                 }
                 else
                 {
-                    Console.WriteLine("your passed");
+                    Console.WriteLine("Your passed");
                 }
 
-                Console.WriteLine(" please enter your marks of english");
+                Console.WriteLine("Please enter your marks of english");
+                Console.Write(":");
                 string e = Console.ReadLine();
                 int eng = Convert.ToInt32(e);
                 if (eng <= 35)
                 {
-                    Console.WriteLine("your failed");
+                    Console.WriteLine("Your failed");
                 }
                 else if (eng > 100)
                 {
-                    Console.WriteLine("please enter valid marks");
+                    Console.WriteLine("Please enter valid marks");
                     continue;
                 }
                 else
                 {
-                    Console.WriteLine("your passed");
+                    Console.WriteLine("Your passed");
                 }
 
                 float per = ((float)(maths + science + eng + sst + pe) / 500);
                 float percentage = (per * 100);
                 //Console.WriteLine($"your pass/failure percentage is {per}");
                 //Console.WriteLine(per);
-                //Console.WriteLine($"your overall passing/fail percentage is {percentage} ");
+                //Console.WriteLine($"your overall passing/fail percentage is {percentage:F2}% ");
                 if (percentage < 36)
                 {
-                    Console.WriteLine($"your failing percentage is {percentage}");
+                    Console.WriteLine($"Your failing percentage is {percentage:F2}");
                 }
                 if (percentage >= 36)
                 {
-                    Console.WriteLine($"your passing percentage is {percentage}");
+                    Console.WriteLine($"Your passing percentage is {percentage:F2}");
                 }
 
 
                 if (percentage >= 36 || percentage < 60)
                 {
-                    Console.WriteLine("frist division");
+                    Console.WriteLine("Frist Division");
                 }
                 else if (percentage >= 60 || percentage < 80)
                 {
-                    Console.WriteLine("second division");
+                    Console.WriteLine("Second Division");
                 }
                 else if (percentage >= 80 || percentage < 90)
                 {
-                    Console.WriteLine("thrid division");
+                    Console.WriteLine("Thrid Division");
                 }
                 else if (percentage >= 90 || percentage <= 100)
                 {
-                    Console.WriteLine("you topper");
-                }
-                else if (percentage > 100)
-                {
-                    Console.WriteLine("please enter valid marks!!");
+                    Console.WriteLine("Congratulations your a TOPPER!!!!!");
                 }
                 break;
             }
