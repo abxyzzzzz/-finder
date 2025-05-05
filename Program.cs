@@ -105,12 +105,13 @@ namespace giti
                 {
                     Console.WriteLine("Your passed");
                 }
-
+                
                 float per = ((float)(maths + science + eng + sst + pe) / 500);
                 float percentage = (per * 100);
                 //Console.WriteLine($"your pass/failure percentage is {per}");
                 //Console.WriteLine(per);
                 //Console.WriteLine($"your overall passing/fail percentage is {percentage:F2}% ");
+                Console.WriteLine($"your overall pass/fail percentage is {percentage}% ");
                 if (percentage < 36)
                 {
                     Console.WriteLine($"Your failing percentage is {percentage}");
